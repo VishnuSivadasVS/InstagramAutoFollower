@@ -7,7 +7,6 @@ function clikOnLink(link) {
     }
 }
 
-
 function ScrollJS() {
     scrollTo(document.documentElement.scrollTop, 1000);
 }
@@ -20,7 +19,7 @@ async function Follow15(start, end) {
     ScrollJS();
 }
 
-const asyncLoop = async () => {
+async function FunctionMain() {
 
     for (let i = 0; i < list.length; i + 15) {
         if (list.length == i) {
@@ -33,4 +32,4 @@ const asyncLoop = async () => {
 
 }
 
-asyncLoop();
+FunctionMain();
