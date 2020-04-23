@@ -7,12 +7,14 @@ function clikOnLink(link) {
     }
 }
 
+
 function ScrollJS() {
-    scrollTo(document.documentElement.scrollTop, 1000);
+    var current = document.documentElement.scrollTop;
+    scrollTo(current, current+300);
 }
 
 async function Follow15(start, end) {
-    for (let i = start; i < end; i++) {
+    for (i = start; i < end; i++) {
         await timeoutPromise(3000);
         clikOnLink(list[i]);
     }
@@ -21,13 +23,9 @@ async function Follow15(start, end) {
 
 async function FunctionMain() {
 
-    for (let i = 0; i < list.length; i + 15) {
-        if (list.length == i) {
-            const list = document.querySelectorAll('.L3NKy');
-        }
-        Follow15(i, i + 15);
-
-        await timeoutPromise(60000);
+    for (i = 0; i <= list.length; i + 5) {
+        Follow15(i, i + 5);
+        await timeoutPromise(50000);
     }
 
 }
