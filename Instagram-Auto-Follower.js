@@ -7,7 +7,6 @@ function clikOnLink(link) {
     }
 }
 
-
 function ScrollJS(selector) {
     if(selector == "suggested"){
         var current = document.documentElement.scrollTop;
