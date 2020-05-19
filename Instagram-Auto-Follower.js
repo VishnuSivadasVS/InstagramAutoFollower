@@ -15,7 +15,7 @@ function ScrollJS() {
 
 async function Follow15(start, end) {
     for (i = start; i < end; i++) {
-        await timeoutPromise(3000);
+        await timeoutPromise(5000);
         clikOnLink(list[i]);
     }
     ScrollJS();
@@ -25,7 +25,7 @@ async function FunctionMain() {
 
     for (i = 0; i <= list.length; i + 5) {
         Follow15(i, i + 5);
-        await timeoutPromise(50000);
+        await timeoutPromise(60000);
     }
 
 }
