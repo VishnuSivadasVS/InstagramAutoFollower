@@ -15,7 +15,7 @@ function ScrollJS(selector) {
     }
     else if(selector == "othersfollowers"){
         var fDialog = document.querySelector('div[role="dialog"] .isgrP');
-        fDialog.scrollTop = fDialog.scrollTop + 250;
+        fDialog.scrollTop = fDialog.scrollTop + 300;
     }
 }
 
