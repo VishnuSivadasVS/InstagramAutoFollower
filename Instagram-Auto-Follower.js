@@ -8,30 +8,36 @@ function clikOnLink(link) {
 }
 
 
-function ScrollJS() {
-    var current = document.documentElement.scrollTop;
-    scrollTo(current, current+300);
+function ScrollJS(selector) {
+    if(selector == "suggested"){
+        var current = document.documentElement.scrollTop;
+        scrollTo(current, current+300);
+    }
+    else if(selector == "othersfollowers"){
+        var fDialog = document.querySelector('div[role="dialog"] .isgrP');
+        fDialog.scrollTop = fDialog.scrollTop + 250;
+    }
 }
 
-async function Follow15(start, end) {
+async function FollowPeople(start, end,selector) {
     for (i = start; i < end; i++) {
         clikOnLink(list[i]);
-        console.log("Following Person: "+i);
+        console.log("Person: "+i);
         await timeoutPromise(5000);
     }
-    ScrollJS();
+    ScrollJS(selector);
 }
 
-async function FunctionMain() {
+async function FunctionMain(selector) {
 
     for (i = 0; i <= list.length; i + 5) {
         if(i<=list.length-1){
             list = document.querySelectorAll('.L3NKy');
         }
-        Follow15(i, i + 5);
+        FollowPeple(i, i + 5,selector);
         await timeoutPromise(60000);
     }
 
 }
 
-FunctionMain();
+FunctionMain("suggested");
