@@ -34,7 +34,7 @@ async function FunctionMain(selector) {
         if(i<=list.length-1){
             list = document.querySelectorAll('.L3NKy');
         }
-        FollowPeple(i, i + 5,selector);
+        FollowPeople(i, i + 5,selector);
         await timeoutPromise(60000);
     }
 
