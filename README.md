@@ -1,5 +1,6 @@
 # Instagram Automation with JS
 [![Vishnu Sivadas](https://www.vishnusivadas.com/github/codequality.svg?style=flat)](https://github.com/VishnuSivadasVS)
+[![Vishnu Sivadas](https://vishnusivadas.com/github/open-source.svg?style=flat)](https://github.com/VishnuSivadasVS)
 
 We could use this to follow others automatically. As instagram stopped support for bots we have to do something like these to automate instagram. This JavaScript code will help you to follow other people automatically. This would help you gain more followers.
 ## How to use?
