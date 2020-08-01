@@ -22,7 +22,7 @@ async function FollowPeople(start, end,selector) {
     for (i = start; i < end; i++) {
         clikOnLink(list[i]);
         console.log("Person: "+i);
-        await timeoutPromise(5000);
+        await timeoutPromise(10000);
     }
     ScrollJS(selector);
 }
@@ -34,7 +34,7 @@ async function FunctionMain(selector) {
             list = document.querySelectorAll('.L3NKy');
         }
         FollowPeople(i, i + 5,selector);
-        await timeoutPromise(60000);
+        await timeoutPromise(80000);
     }
 
 }
